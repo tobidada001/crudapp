@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <table>
+
+        <thead>Details</thead>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Email Address</td>
+            <td>Password</td>
+        </tr>
+
+        {% for emp in emps    %}
+         <tr>
+            <td>{{emp.firstname}}</td>
+            <td>{{emp.lastname}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.password}}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+    {% lorem %} {%lorem%}
+</body>
+</html>
